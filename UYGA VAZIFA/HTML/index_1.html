@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #textarea {
+            resize: none;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        input {
+            width: 745px;
+            padding: 20px 0px 20px 10px ;
+            margin-top: 25px;
+            font-size: 20px;
+            display: block;
+        }
+        button {
+            margin-top: 25px;
+            padding: 10px 345px;
+            margin-bottom: 30px;
+            font-size: 40px;
+            background-color: blue;
+            border: none;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form onsubmit="create(event)" >
+                <textarea id="textarea" cols="65" rows="10" placeholder="So'zni kiriting" ></textarea>
+                <input type="text" id="input" placeholder="So'zni kiriting" >
+                <button type="submit" onclick="create" >OK</button>
+            </form>
+        </div>
+    </div>
+    <a href="./index.html">Asosiy bo'lim</a>
+    <script src="../JS/main_1.js" ></script>
+</body>
+</html>
